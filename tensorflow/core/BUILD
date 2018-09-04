@@ -2444,6 +2444,7 @@ tf_cuda_library(
     name = "framework_internal",
     srcs = FRAMEWORK_INTERNAL_PRIVATE_HEADERS,
     hdrs = FRAMEWORK_INTERNAL_PUBLIC_HEADERS,
+    visibility = ["//visibility:public"],
     deps = [
         ":framework_internal_headers_lib",
         "//third_party/eigen3",
